@@ -29,7 +29,7 @@ If you guess the correct number within the given attempts, you win! Otherwise, t
 1. Make sure you have a C++ compiler installed (e.g., `g++`).
 2. Clone this repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/itsamritabhowmick/guess_the_number_cpp.git
    ```
 3. Navigate to the project directory:
    ```bash
