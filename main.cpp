@@ -35,6 +35,7 @@ void gamecode(int n, int attempt)
     else
     {
         cout << "\nYou loose." << endl;
+        cout << "\nThe actual number is: " << n << endl;
     }
 }
 void easy()
@@ -63,7 +64,8 @@ void hard()
 int main()
 {
     int level;
-    cout << "\nEnter the level for this game: ";
+    cout << "\n1 for easy - 5 attempts\n2 for medium - 7 attempts\n3 for hard - 15 attempts" << endl;
+    cout << "\nEnter the level for this game:\t ";
     cin >> level;
     if (level == 1)
     {
