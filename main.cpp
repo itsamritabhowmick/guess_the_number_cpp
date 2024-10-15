@@ -6,6 +6,7 @@ void gamecode(int n, int attempt)
 {
     int guess;
     int count = 0;
+    int fl = 0;
     while (count < attempt)
     {
         cout << "\nEnter your number: ";
@@ -22,9 +23,18 @@ void gamecode(int n, int attempt)
         }
         else
         {
+            fl = 1;
             cout << "\nYour number is right now..";
             break;
         }
+    }
+    if (fl == 1)
+    {
+        cout << "\nCongratulations!!! You guess in " << count + 1 << " attempts" << endl;
+    }
+    else
+    {
+        cout << "\nYou loose." << endl;
     }
 }
 void easy()
@@ -33,7 +43,6 @@ void easy()
     int n = rand();
     n = (n % 10) + 1;
     gamecode(n, 5);
-
 }
 void medium()
 {
