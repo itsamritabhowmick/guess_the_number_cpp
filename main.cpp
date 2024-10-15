@@ -51,7 +51,15 @@ void medium()
     n = (n % 100) + 1;
     gamecode(n, 7);
 }
-void hard();
+void hard()
+{
+    int low = -500;
+    int high = 500;
+    srand(time(0));
+    int n = rand();
+    n = (n % (high - low + 1)) + low;
+    gamecode(n, 15);
+}
 int main()
 {
     int level;
@@ -67,7 +75,7 @@ int main()
     }
     else if (level == 3)
     {
-        // hard();
+        hard();
     }
     return 0;
 }
